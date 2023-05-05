@@ -1,0 +1,4 @@
+Django==3.2.9
+djangorestframework==3.13.0
+kubernetes==19.15.0
+drf-yasg
