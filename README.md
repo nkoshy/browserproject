@@ -1,10 +1,10 @@
 # Browserapp
 
-Spin up a Firefox browser instance in Kubernetes with a single API request.
+Remote Browser Isolation - Spin up a Firefox browser instance in Kubernetes with a single API request.
 
 ## Description
 
-Browserapp is a Python Flask-based application deployed in Kubernetes that creates a Firefox browser instance as a pod upon receiving an API request. It returns a URL that allows users to access the browser instance directly from their laptop browser.
+Browserapp is a Python Django-based application deployed in Kubernetes that creates a Firefox browser instance as a pod upon receiving an API request. It returns a URL that allows users to access the browser instance directly from their laptop browser. 
 
 ## Features
 
@@ -25,14 +25,12 @@ Browserapp is a Python Flask-based application deployed in Kubernetes that creat
 
 1. Clone the repository:
    ```
-   git clone https://github.com/yourusername/browserapp.git
+   git clone https://github.com/nkoshy/browserproject.git
    cd browserapp
    ```
 
-2. Apply the Kubernetes manifests:
-   ```
-   kubectl apply -f k8s/
-   ```
+2. Create and apply the Kubernetes manifests:
+
 
 This will deploy the Browserapp along with necessary services and ingress rules.
 
@@ -52,15 +50,15 @@ This will deploy the Browserapp along with necessary services and ingress rules.
 
 ## API Endpoints
 
-- `POST /spin`: Spins up a new Firefox browser instance and returns the access URL.
+- `POST `: Spins up a new Firefox browser instance and returns the access URL.
 
 ## Configuration
 
-No specific configuration is required for basic usage. The application uses default settings to create the Firefox pod in your Kubernetes cluster. For advanced configuration, refer to the Kubernetes manifests in the `k8s/` directory.
+No specific configuration is required for basic usage. The application uses default settings to create the Firefox pod in your Kubernetes cluster.
 
 ## Docker
 
-The application uses the official Firefox Docker image to create the browser instance pods.
+The application uses the Firefox Docker image to create the browser instance pods.
 
 ## Contributing
 
